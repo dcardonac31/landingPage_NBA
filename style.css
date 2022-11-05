@@ -1,0 +1,7 @@
+.cards-news {
+    display: flex;
+}
+
+.nav-fixed {
+    position: fixed;
+}

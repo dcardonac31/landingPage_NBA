@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <title>Landing Page NBA</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://cdn.nba.com/logos/leagues/logo-nba.svg" alt="logo_NBA">
+                NBA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Noticias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" class="nav-link" href="#proximos-partidos">Partidos</a></li>
+                            <li><a class="dropdown-item" class="nav-link" href="#traspasos">Traspasos</a></li>
+                            <li><a class="dropdown-item" class="nav-link" href="#mejores-jugadas">Mejores jugadas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end Navbard -->
+
+    <!-- carrousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://pbs.twimg.com/media/FgxDu6oWYAAGtxx?format=jpg" class="d-block w-100" height="600px"
+                    alt="new1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>LUKA DONCIC SCORES 30-PLUS FOR 8TH STRAIGHT GAME</h5>
+                    <p>Mavs star matches Wilt Chamberlain for the second-longest streak in NBA history, set 60 seasons
+                        ago.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.nba.com/manage/2022/11/jordan-clarkson-reacts-crowd-cropped-1568x882.jpg"
+                    class="d-block w-100" height="600px" alt="new2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Q&A: JORDAN CLARKSON ON JAZZ'S STRONG START, NEW-LOOK TEAM</h5>
+                    <p>Jazz guard Jordan Clarkson is embracing his expanded role this season and proving his impact as a
+                        starter.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.nba.com/manage/2022/11/GettyImages-1436336426-scaled-e1667657350793-784x494.jpg"
+                    class="d-block w-100" height="600px" alt="new3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>JEWISH WIZARDS FORWARD DENI AVDIJA WEIGHS IN ON KYRIE IRVING SITUATION</h5>
+                    <p>Avdija, the league’s lone Israeli-born player, says "it's a little upsetting to hear"
+                        antisemitism.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end carrousel -->
+
+    <!-- proximos partidos -->
+    <section id="proximos-partidos">
+        <div>
+            <h2>
+                Proximos partidos
+            </h2>
+        </div>
+        <div class="cards-news">
+            <div class="card" style="width: 18rem;">
+                <img src="https://www.amwaycenter.com/assets/img/UpcomingEventsGamesAmwaySAC-dc7c794a02.jpg"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Sacramento Kings - Orlando Magic</h5>
+                    <p class="card-text">5:00 PM ET</p>
+                    <p class="card-text">Amway Center - Orlando, FL</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end traspasos -->
+
+    <!-- traspasos -->
+    <section id="traspasos">
+        <div>
+            <h2>
+                Traspasos de la temporada
+            </h2>
+        </div>
+        <div class="cards-news">
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2022-02/11aa%20%288%29.png?itok=pJ6ozhBf"
+                    class="card-img-top" alt="traspaso1">
+                <div class="card-body">
+                    <h5 class="card-title">Porzingis, rumbo a Washington</h5>
+                    <p class="card-text"><b>Wizards reciben:</b> Kristaps Porzingis, segunda ronda de Draft</p>
+                    <p class="card-text"><strong>Mavericks reciben:</strong> Spencer Dinwiddie, Davis Bertans</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end traspasos -->
+
+    <!-- mejores jugadas -->
+    <section id="mejores-jugadas">
+        <div>
+            <h3>Mejores jugadas</h3>
+        </div>
+        <div class="cards-news">
+            <div class="card" style="width: 18rem;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/x1hW2saRDfQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season</h5>
+                    <p class="card-text">Lakers vs Pelicans
+                        Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season
+                        
+                        GAMETIME HIGHLIGHTS is your home for ALL NBA HIGHLIGHTS!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/x1hW2saRDfQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season</h5>
+                    <p class="card-text">Lakers vs Pelicans
+                        Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season
+                        
+                        GAMETIME HIGHLIGHTS is your home for ALL NBA HIGHLIGHTS!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/x1hW2saRDfQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season</h5>
+                    <p class="card-text">Lakers vs Pelicans
+                        Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season
+                        
+                        GAMETIME HIGHLIGHTS is your home for ALL NBA HIGHLIGHTS!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/x1hW2saRDfQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season</h5>
+                    <p class="card-text">Lakers vs Pelicans
+                        Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season
+                        
+                        GAMETIME HIGHLIGHTS is your home for ALL NBA HIGHLIGHTS!</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/x1hW2saRDfQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season</h5>
+                    <p class="card-text">Lakers vs Pelicans
+                        Los Angeles Lakers vs New Orleans Pelicans Full Game Highlights | November 1, 2022 | 2022-23 Season
+                        
+                        GAMETIME HIGHLIGHTS is your home for ALL NBA HIGHLIGHTS!</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- end mejores jugadas -->
+
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><img src="./img/facebook.png" alt="facebook" width="30px"></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><img src="./img/twitter.png" alt="twitter" width="30px"></a>
+ 
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><img src="./img/instagram.png" alt="instagram" width="30px"></a>
+  
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
